@@ -4,11 +4,11 @@
 function assignGrade(x) {
   if (x >= 90) {
     return "A"
-  } else if (x <= 89 && x > 80) {
+  } else if (/*x <= 89 && */ x > 80) {
     return "B"
-  } else if (x <= 79 && x > 70) {
+  } else if (/*x <= 79 && */ x > 70) {
     return "C"
-  } else if (x <= 69 && x > 60) {
+  } else if (/*x <= 69 && */ x > 60) {
     return "D"
   } else {
     return "F"
@@ -37,7 +37,7 @@ const testArray = [
 function truthy(array) {
   let numOfTru = 0
   for (let i = 0; i < array.length; i++) {
-    if (array[i] === true) {
+    if (array[i] == 1) {
       numOfTru++
     }
   }
@@ -69,5 +69,10 @@ console.log(scores(2, 2))
 numList = [3, 2, 7, 4, 9, 0, 6, 5, 8]
 
 console.log(...numList)
+
+function sort(){
+for(let i = 0; i < 1; i++)
 numList.sort((a, b) => a - b)
+}
+sort(numList)
 console.log(...numList)
