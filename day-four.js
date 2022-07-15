@@ -47,10 +47,10 @@ truthy(testArray)
 
 // 3. Create a function that converts a string to all uppercase letters
 // and console.log the result (hint: string methods):
-let str = 'WHAT a TIME to BE ALIVE!'
+let str = "WHAT a TIME to BE ALIVE!"
 
-function stringUp(str){
-    return str.toUpperCase()
+function stringUp(str) {
+  return str.toUpperCase()
 }
 
 console.log(stringUp(str))
@@ -58,11 +58,16 @@ console.log(stringUp(str))
 // 4. Create a function that takes in a number of two-pointers and
 // three-pointers made and returns a basketball team’s total score?
 
-function scores(x,y){
-   return x * 2 + y * 3
+function scores(x, y) {
+  return x * 2 + y * 3
 }
 
-console.log(scores(2,2))
+console.log(scores(2, 2))
 
 // Extra for experts:
 // 5. Create a function that takes an array of numbers & returns both min and max in that order. (use a loop)
+numList = [3, 2, 7, 4, 9, 0, 6, 5, 8]
+
+console.log(...numList)
+numList.sort((a, b) => a - b)
+console.log(...numList)
