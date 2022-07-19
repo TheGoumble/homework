@@ -10,7 +10,10 @@ function power(num, exponent) {
 }
 power(2, 2)
 // Create a function that takes an array and a string as arguments and returns the index of the string.
-function theDex(array, string) {}
+function theDex(array, string) {
+    return array.indexOf(string)
+}
+
 
 // Create a function that takes an array and returns the types of values (data types) in a new array.
 function dType(array) {
@@ -18,4 +21,9 @@ function dType(array) {
   for (let i = 0; i < array.length; i++) {
     dataT.push(typeof array[i])
   }
+  console.log(...dataT)
 }
+
+//test array
+let theArray = [3, '5', true, 'word', 69, false]
+dType(theArray)
